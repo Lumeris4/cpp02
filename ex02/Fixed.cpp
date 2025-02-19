@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 13:42:00 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/19 12:07:57 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/19 12:11:42 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,8 +152,7 @@ const Fixed	&Fixed::min(const Fixed &first, const Fixed &second)
 {
 	if (first.toFloat() <= second.toFloat())
 		return (first);
-	else
-		return (second);
+	return (second);
 }
 
 Fixed	&Fixed::max(Fixed &first, Fixed &second)
