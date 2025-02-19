@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 13:42:00 by lelanglo          #+#    #+#             */
-/*   Updated: 2025/02/17 14:36:02 by lelanglo         ###   ########.fr       */
+/*   Updated: 2025/02/19 12:04:22 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,8 @@ float Fixed::toFloat() const
 	return((float)this->_stock / (float)(1 << this->_stock_bits));
 }
 
-std::ostream	&operator<<(std::ostream &output, const Fixed &fixed)
+std::ostream	&operator<<(std::ostream &output, const Fixed &other)
 {
-	output << fixed.toFloat();
+	output << other.toFloat();
 	return (output);
 }
